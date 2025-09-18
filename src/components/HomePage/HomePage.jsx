@@ -1,6 +1,7 @@
-import Merchant from '../../Merchant';
+
 import Banner from './Banner';
 import LogoMarquee from './LogoMarquee';
+import Merchant from './Merchant';
 import ParcellIssues from './ParcellIssues';
 import Services from './Services';
 
@@ -13,6 +14,8 @@ const HomePage = () => {
             <LogoMarquee/>
             <ParcellIssues/>
             <Merchant/>
+        
+           
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import locationMerchantImg from "../src/assets/location-merchant.png"
-import Button from './Button';
+import Button from '../../Button';
 
 const Merchant = () => {
     return (
