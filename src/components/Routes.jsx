@@ -3,6 +3,9 @@ import Layout from "./Layout";
 
 import HomePage from "./HomePage/HomePage";
 import AboutUs from "./pages/AboutUs";
+import AuthLayout from "./AuthLayout/AuthLayout";
+import Login from "./AuthLayout/Login";
+import Register from "./AuthLayout/Register";
 
 
 const router = createBrowserRouter([
@@ -14,6 +17,14 @@ const router = createBrowserRouter([
         {path:"about", Component:AboutUs},
     ]
   },
+  {
+    path:"/",
+    Component:AuthLayout,
+    children:[
+      {path:"login", Component:Login},
+      {path:"register", Component:Register},
+    ]
+  }
 ]);
 
 export default router

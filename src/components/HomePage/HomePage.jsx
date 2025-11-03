@@ -3,6 +3,7 @@ import Banner from './Banner';
 import LogoMarquee from './LogoMarquee';
 import Merchant from './Merchant';
 import ParcellIssues from './ParcellIssues';
+import ReviewPart from './Reviewpart';
 import Services from './Services';
 
 
@@ -14,6 +15,7 @@ const HomePage = () => {
             <LogoMarquee/>
             <ParcellIssues/>
             <Merchant/>
+            <ReviewPart/>
         
            
         </div>

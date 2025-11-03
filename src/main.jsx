@@ -6,7 +6,10 @@ import router from './components/Routes.jsx'
 import { RouterProvider } from 'react-router'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+          once: true,
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
