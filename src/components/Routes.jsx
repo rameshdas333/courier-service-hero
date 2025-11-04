@@ -6,6 +6,8 @@ import AboutUs from "./pages/AboutUs";
 import AuthLayout from "./AuthLayout/AuthLayout";
 import Login from "./AuthLayout/Login";
 import Register from "./AuthLayout/Register";
+import Coverage from "./pages/Coverage";
+import TrackOrder from "./pages/TrackOrder";
 
 
 const router = createBrowserRouter([
@@ -14,7 +16,8 @@ const router = createBrowserRouter([
     Component: Layout,
     children:[
         {index:true, Component:HomePage},
-        {path:"about", Component:AboutUs},
+        {path:"coverage",Component:Coverage},
+        {path:"trackorder",Component:TrackOrder, loader:()=>fetch('./warehouses.json')}
     ]
   },
   {

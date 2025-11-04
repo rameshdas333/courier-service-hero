@@ -6,8 +6,8 @@ import router from './components/Routes.jsx'
 import { RouterProvider } from 'react-router'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Authprovider from './contexts/AuthContext/Authprovider.jsx'
 import AuthProvider from './contexts/AuthProvider.jsx'
+
 AOS.init({
     duration: 2000, // Animation duration in milliseconds
           once: true,
