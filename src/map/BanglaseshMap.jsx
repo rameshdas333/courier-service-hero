@@ -7,7 +7,7 @@ BangladeshMap.jsx
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import { useState, useEffect } from "react";
+import { useEffect, useState} from "react";
 import { useLoaderData } from "react-router";
 
 delete L.Icon.Default.prototype._getIconUrl;
