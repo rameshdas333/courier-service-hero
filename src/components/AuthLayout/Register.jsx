@@ -2,11 +2,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router';
 import SocialLink from './socialLogin/SocialLink';
-import useAuth from '../../hooks/UseAuth';
+import UseAuth from '../../hooks/UseAuth';
+
 
 
 const Register = () => {
-    const { createUser} = useAuth()
+    const { createUser} = UseAuth()
     const {register,handleSubmit,formState:{errors}}= useForm()
     const onSubmit = data=>{
         console.log(data)
