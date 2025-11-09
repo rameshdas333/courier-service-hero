@@ -1,5 +1,5 @@
 import React from 'react';
-import locationMerchantImg from "../src/assets/location-merchant.png"
+import locationMerchantImg from "../../assets/location-merchant.png"
 import Button from '../../Button';
 
 const Merchant = () => {

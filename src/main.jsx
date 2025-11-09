@@ -6,12 +6,19 @@ import router from './components/Routes.jsx'
 import { RouterProvider } from 'react-router'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+import AuthProvider from './contexts/AuthProvider.jsx'
+
+AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+          once: true,
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <div className='max-w-7xl  mx-auto'>
-    <RouterProvider router={router} />
+ <AuthProvider>
+   <RouterProvider router={router} />
+ </AuthProvider>
    </div>
   </StrictMode>,
 )

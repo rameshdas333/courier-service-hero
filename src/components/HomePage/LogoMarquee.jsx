@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import casioImg from "../../assets/casio.png"
 import AmazonImg from "../../assets/amazon.png"
-import moonStarImg from "../../assets/moonStar.png"
+import moonStarImg from "../../assets/moonstar.png"
 import starImg from "../../assets/start.png"
 import starPeopleImg from "../../assets/start-people 1.png"
 import randstandImg from "../../assets/randstad.png"

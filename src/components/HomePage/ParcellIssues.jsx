@@ -25,20 +25,20 @@ export default function ParcellIssues() {
   ];
 
   return (
-    <div className=" py-12 grid gap-8">
+    <div className="py-12 grid  gap-8">
       {services.map((service, index) => (
         <div
           key={index}
-          className=" relative after:absolute after:content-[''] after:h-full after:w-[2px] after:top-0  after:left-[230px] after:bg-[#03464D] flex items-center gap-6 bg-base-100 shadow-md rounded-xl "
+          className="  relative after:absolute after:content-[''] after:h-full after:w-[2px] after:top-0  after:left-[230px] after:bg-[#03464D] flex items-center gap-6 bg-base-100 shadow-md rounded-xl "
         >
          
             <img className=" p-8 w-[200px] h-[200px]" src={service.img} alt=""/>
         {/* border */}
           
             {/* border */}
-          <div>
-            <h2 className=" text-2xl font-extrabold  mb-2">{service.title}</h2>
-            <p className="text-gray-600 text-base  leading-6 font-medium w-[900px] pl-7  ">{service.description}</p>
+          <div className="">
+            <h2 className=" md:text-2xl text-xl  font-extrabold  mb-2">{service.title}</h2>
+            <p className="text-gray-600 md:text-base text-sm leading-6 font-medium md:w-[900px] pl-7 ">{service.description}</p>
           </div>
         </div>
       ))}
